@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+
+# Node
+node_modules/
+
+# Laravel
+/vendor
+.env
+/storage/*.key
+
+# Docker
+*.log
