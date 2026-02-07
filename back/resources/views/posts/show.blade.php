@@ -10,5 +10,7 @@
         {{ $id }}
     </h1>
 
+    <p><?php echo $prueba ?></p>
+
 </body>
 </html>

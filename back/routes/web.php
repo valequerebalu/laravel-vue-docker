@@ -4,8 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 
 Route::get('/', function () {
-    return "Welcome to the application!";
-});
+    return view('welcome');
+}); 
 
 //Route::get('/posts', [PostController::class, 'index'])
  //   ->name('posts.index');

@@ -12,7 +12,13 @@ class PostController extends Controller
      */
     public function index()
     {
-    return view('posts.index');
+        $posts = [
+            ['id' => 1, 'title' => 'Primer post', 'content' => 'Contenido del primer post'],
+            ['id' => 2, 'title' => 'Segundo post', 'content' => 'Contenido del segundo post'],
+            ['id' => 3, 'title' => 'Tercer post', 'content' => 'Contenido del tercer post'],
+        ];
+      
+        return view('posts.index', compact('posts'));
 
     }
 

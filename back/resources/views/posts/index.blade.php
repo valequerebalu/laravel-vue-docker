@@ -12,5 +12,10 @@
         <li>Post 2</li>
         <li>Post 3</li>
     </ul>
+    <script>
+        let posts = @json($posts);
+        console.log(posts);
+    </script>
+
 </body>
 </html>
