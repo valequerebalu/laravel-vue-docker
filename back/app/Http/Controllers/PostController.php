@@ -17,8 +17,12 @@ class PostController extends Controller
             ['id' => 2, 'title' => 'Segundo post', 'content' => 'Contenido del segundo post'],
             ['id' => 3, 'title' => 'Tercer post', 'content' => 'Contenido del tercer post'],
         ];
+        $count = count($posts);
+
+
+        $variables_nula= null;
       
-        return view('posts.index', compact('posts'));
+        return view('posts.index', compact('posts', 'count'));
 
     }
 
