@@ -16,8 +16,8 @@
     </style>
 
     <script src="https://cdn.tailwindcss.com"></script>
-   
-    
+
+
     </script>
 </head>
 
@@ -116,12 +116,40 @@
         <p>Índice: {{ $i }}</p>
     @endfor
 
-    @includeFirst( ['posts.prueba', 'posts.create'], ['variable' => 'Valor de la variable pasada a la vista incluida'])
+    @includeFirst(
+        ['posts.prueba', 'posts.create'],
+        ['variable' => 'Valor de la variable pasada a la vista incluida']
+    )
 
+    <!-- Componentes de Clases -->
     <div class="container mx-auto py-12">
-        <x-alert type="success" message="¡Operación exitosa!" />
+        <x-alert type="success" class="mb-4">
+            <x-slot name="message">
+                ¡Este es un mensaje de alerta!
+            </x-slot>
+            <x-slot name="title">
+                ¡Este es un título de alerta!
+            </x-slot>
+        </x-alert>
+
+        <p class="mt-4">hola mundo</p>
     </div>
 
+    <!-- Componentes Anónimos -->
+
+    <x-container width="7xl">
+        <x-alert type="success" class="mb-4">
+            <x-slot name="message">
+                ¡Este es un mensaje de alerta!
+            </x-slot>
+            <x-slot name="title">
+                ¡Este es un título de alerta!
+            </x-slot>
+        </x-alert>
+
+
+        <p class="mt-4">hola mundo</p>
+    </x-container>
 
 </body>
 
