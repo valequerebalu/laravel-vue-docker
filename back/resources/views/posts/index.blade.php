@@ -1,25 +1,10 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('layouts.app2')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Posts</title>
-    <style>
-        .color-red {
-            color: red;
-        }
+@section('tittle', 'Listado de posts')
 
-        .color-green {
-            color: green;
-        }
-    </style>
+@section('content')
+  
 
-    <script src="https://cdn.tailwindcss.com"></script>
-
-
-    </script>
-</head>
 
 <body>
     <h1>Listado de posts</h1>
@@ -154,3 +139,5 @@
 </body>
 
 </html>
+@endsection
+
